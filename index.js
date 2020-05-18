@@ -9,6 +9,7 @@ submitBtn.addEventListener('click', (e)=>{
         form.classList.add('error-p')
         errorBtn.style.display="block"
         emailField.addEventListener('input', e=>{
+            init()
             if(!emailField.validity.patternMismatch){
                 form.classList.remove('error-p')
                 errorBtn.style.display="none"
@@ -21,3 +22,6 @@ submitBtn.addEventListener('click', (e)=>{
     } 
 })
 
+const init = ()=>{
+    form.classList.remove('success')
+}
