@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <section class="banner-container">
+    <div class="banner-inner">
+      <div class="logo">
+        <img src="images/logo.svg">
+      </div>
+      <div class="banner-image">
+        <picture>
+          <source media="(min-width: 766px)" srcset="images/hero-desktop.jpg">
+          <img src="images/hero-mobile.jpg" alt="">
+        </picture>
+      </div>
+      <div class="banner-copy">
+        <h1 >
+          We're 
+        </h1>
+        <h1 class="primary-text">
+          coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form class="cta" id="email-form" 
+        data-error="Please provide a valid email" 
+        data-success="You've successfully subscribe! Check your mailbox and stay tune!">
+          <input type="email" class="email-field" id="email-field" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <div class="error" id="error-b">
+            
+          </div>
+         <button class="btn-main" id="submit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
+         </button>
+        </form>
+    </div>
+    </div>
+
+  </section>
+
+ 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Irene K</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
