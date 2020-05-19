@@ -13,7 +13,6 @@ submitBtn.addEventListener('click', (e)=>{
             if(!emailField.validity.patternMismatch){
                 form.classList.remove('error-p')
                 errorBtn.style.display="none"
-
             }
         })
     } else{
