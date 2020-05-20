@@ -5,7 +5,7 @@ const emailField = document.getElementById('email-field')
 
 submitBtn.addEventListener('click', (e)=>{
     e.preventDefault()
-    if(emailField.validity.patternMismatch){
+    if(emailField.validity.patternMismatch || !emailField.value){
         form.classList.add('error-p')
         errorBtn.style.display="block"
         emailField.addEventListener('input', e=>{
